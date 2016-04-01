@@ -7,6 +7,8 @@ function search() {
   statusMsg('');
 
   if (word in data) {
+    statusMsg(data[word].length+' words found within one edit of '+word+'.');
+
     for (var i = 0; i < data[word].length; i++) {
       var w = data[word][i];
       appendToUl(ul, w);
