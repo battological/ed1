@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+	<script type='text/javascript' src='data/ed1.json'></script>
+	<script type='text/javascript' src='js/lookup.js'></script>
+    </head>
+    <body>
+        <h1>ED1</h1>
+	<p>Find words within one edit distance.</p>
+
+	<div id='search'>
+            <form id='lookup' onSubmit='search()' action='javascript:void(0);'>
+	        <input type='text' id='lookup-term' placeholder='word'>
+		<button type='submit'>Search</button>
+	    </form>
+	    <ul id='results'>
+	    </ul>
+	</div>
+    </body>
+</html>
