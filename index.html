@@ -7,15 +7,15 @@
     </head>
     <body>
         <h1>ED1</h1>
-	<p>Find words within one edit distance.</p>
+	<p>Find words within one <a href='https://en.wikipedia.org/wiki/Levenshtein_distance'>edit distance</a>.</p>
 
 	<div id='search'>
             <form id='lookup' onSubmit='search()' action='javascript:void(0);'>
 	        <input type='text' id='lookup-term' placeholder='word'>
 		<button type='submit'>Search</button>
 	    </form>
-	    <ul id='results'>
-	    </ul>
+	    <p id='status'></p>
+	    <ul id='results'></ul>
 	</div>
     </body>
 </html>
